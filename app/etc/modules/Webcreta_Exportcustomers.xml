@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Webcreta_Exportcustomers>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Webcreta_Exportcustomers>
+    </modules>
+</config>

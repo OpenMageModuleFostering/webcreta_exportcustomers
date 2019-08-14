@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webcreta_Exportcustomers>
+            <version>0.1.0</version>
+        </Webcreta_Exportcustomers>
+    </modules>
+    <admin>
+        <routers>
+			<exportcustomers>
+				<use>admin</use>
+				<args>
+					<module>Webcreta_Exportcustomers</module>
+					<frontName>exportcustomers</frontName>
+				</args>
+			</exportcustomers>
+        </routers>
+    </admin>
+    <adminhtml>
+	<menu>
+       <main_menu translate="title" module="exportcustomers">
+           <title>Webcreta</title>
+           <sort_order>70</sort_order>
+               <children>
+					<exportcustomers translate="title" module="exportcustomers">
+						<title>Export Customers</title>
+						<sort_order>100</sort_order>
+						<action>exportcustomers/adminhtml_exportcustomers</action>
+					</exportcustomers>
+               </children>
+       </main_menu>
+    </menu>
+		<acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <exportcustomers>
+                                        <title>Webcreta - All</title>
+                                    </exportcustomers>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+	<layout>
+        <updates>
+            <exportcustomers>
+                <file>exportcustomers.xml</file>
+            </exportcustomers>
+        </updates>
+     </layout>
+    </adminhtml>   
+    <global>
+		<models>
+            <exportcustomers>
+                <class>Webcreta_Exportcustomers_Model</class>
+            </exportcustomers>                         
+        </models>
+		<blocks>
+            <exportcustomers>
+                <class>Webcreta_Exportcustomers_Block</class>
+            </exportcustomers>
+        </blocks>
+         <helpers>
+            <exportcustomers>
+                <class>Webcreta_Exportcustomers_Helper</class>
+            </exportcustomers>
+        </helpers>
+    </global>
+</config>

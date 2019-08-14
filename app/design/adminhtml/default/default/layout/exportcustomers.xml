@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+    <exportcustomers_adminhtml_exportcustomers_index>
+        <update handle="exportcustomers_index"/>
+        <reference name="content">
+            <block type="adminhtml/template" name="exportcustomers" template="exportcustomers/exportcustomers.phtml"/>
+        </reference>
+    </exportcustomers_adminhtml_exportcustomers_index>
+</layout>

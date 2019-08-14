@@ -1,0 +1,31 @@
+ <div class="content-header">
+    <table cellspacing="0" class="grid-header">
+        <tr>
+            <td><h3>Export All Customers Now</h3></td>
+            <td class="a-right">&emsp;
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="entry-edit">
+    <form id="edit_form" name="edit_form" method="post" action="<?php echo $this->getUrl('*/*/exportcustomers')?>">
+        <input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+        <h4 class="icon-head head-edit-form fieldset-legend">Export Customers Form</h4>
+        <fieldset id="my-fieldset">
+            <table cellspacing="0" class="form-list">
+				<tr><td>Filename: <input type="text" name="filename"></td></tr>
+				<tr><td><input type="radio" name="customers_type" value="all" selected="selected"> All Customers</td></tr>
+				<tr><td><input type="radio" name="customers_type" value="guests"> Guest customers only</td></tr>
+				<tr><td><input type="radio" name="customers_type" value="registered"> Registered customers only</td></tr>
+                <tr><td><button onclick="editForm.submit()" class="scalable save" type="button"><span>Export Customers</span></button></td></tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript">
+    var editForm = new varienForm('edit_form');
+</script>
+<style>
+#my-fieldset td{padding:5px}
+#my-fieldset select{min-height:150px;}
+</style>

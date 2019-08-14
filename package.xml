@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Webcreta_Exportcustomers</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Webcreta customer export extension seamlessly exports Registered and Guest customers to CSV comma separated file, directly from Admin Dashboard</summary>
+    <description>Webcreta customer export extension seamlessly exports Registered and Guest customers to CSV comma separated file, directly from Admin Dashboard Webcreta  Export A perfect solution if you need to export your customer data out of your magento store to import the data back into your e-commerce store or marketing tool.</description>
+    <notes>Fixed minor bugs</notes>
+    <authors><author><name>WebCreta</name><user>WebCreta</user><email>webcreta@gmail.com</email></author></authors>
+    <date>2017-03-02</date>
+    <time>11:31:10</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Webcreta_Exportcustomers.xml" hash="31f2a0db4a9dd24df946ed777f0ffc6e"/></dir></target><target name="magelocal"><dir name="Webcreta"><dir name="Exportcustomers"><dir name="Block"><file name="Exportcustomers.php" hash="2740452811e8566d7806cc9da6b6bbeb"/></dir><dir name="Helper"><file name="Data.php" hash="612dd9366fc64426dee2954e5c38432f"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="ExportcustomersController.php" hash="6c756a55a52724b34da954e5cda94f25"/></dir></dir><dir name="etc"><file name="config.xml" hash="98a8bcb8aaffa987dfb15042e165dcc2"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="exportcustomers.xml" hash="0654d037492a0980498c04701e1e007b"/></dir><dir name="template"><dir name="exportcustomers"><file name="exportcustomers.phtml" hash="df3be56ce1c5dee9baf6e60268139f74"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="doc"><file name="Exportcustomers.PDF" hash="fb63c79b13a03c80dc57d09226b2553a"/></dir><dir name="media"><dir name="exportcustomers"><file name="exportcustomers.csv" hash="d41d8cd98f00b204e9800998ecf8427e"/><file name="guest.csv" hash="025b8e05427158feb6cbc3ae546614bd"/><file name="registered.csv" hash="0b1b2a92be4e5c6db97fae1772ee8ce0"/><file name="testing.csv" hash="f7e853bfbdca7d6428f9c94f40404592"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
